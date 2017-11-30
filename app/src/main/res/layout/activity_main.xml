@@ -192,7 +192,13 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
-    <com.google.android.gms.ads.AdView
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoView"
+        android:paddingTop="4dp"/>
+    <!--<com.google.android.gms.ads.AdView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -377,6 +383,6 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
-    </LinearLayout>
+    </LinearLayout>-->
 
 </LinearLayout>
