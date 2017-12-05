@@ -22,7 +22,9 @@
         <activity
             android:name=".feedback"
             android:label="@string/title_activity_feedback"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+
+        </activity>
     </application>
 
 </manifest>
