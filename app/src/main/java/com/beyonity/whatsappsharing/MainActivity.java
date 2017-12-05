@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.app.DownloadManager;
 import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
@@ -12,8 +13,12 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.MediaController;
+import android.widget.Toast;
+import android.widget.VideoView;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -38,10 +43,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         isStoragePermissionGranted();
         startDownload();
-        //String uri = "https://beyonitysoftwares.cf:2083/cpsess7496955280/download?skipencode=1&file=%2fhome%2fbeyonity%2fpublic_html%2fws%2fRaja%20Ko%20Rani%20Se%20Pyaar%20Ho%20Gaya-u8iT.mp4";
+        String uri = "https://beyonitysoftwares.cf/cftp/download.php?id=1&token=G1RgA83DkYlvi3dO8fYRPUz3MseezEV5&download";
 
-//        String u = "http://www.androidbegin.com/tutorial/AndroidCommercial.3gp";
-        /*play = (ImageView) findViewById(R.id.imageView);
+       String u = "https://beyonitysoftwares.cf/cftp/download.php?id=1&token=G1RgA83DkYlvi3dO8fYRPUz3MseezEV5&download";play = (ImageView) findViewById(R.id.imageView);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             }
-        });*/
+        });
     }
 
     private void startDownload() {
-        String url = "https://beyonitysoftwares.cf:2083/cpsess0250457168/viewer/home%2fbeyonity%2fpublic_html%2fws/Raja%20Ko%20Rani%20Se%20Pyaar%20Ho%20Gaya-u8iT.mp4";
+        String url = "https://beyonitysoftwares.cf/cftp/download.php?id=1&token=G1RgA83DkYlvi3dO8fYRPUz3MseezEV5&download";
         new DownloadFileAsync().execute(url);
     }
     @Override
