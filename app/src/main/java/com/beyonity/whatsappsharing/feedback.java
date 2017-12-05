@@ -10,7 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import com.beyonity.whatsappsharing.R;
+import com.beyonity.whatsappsharing.SuggFragment;
+import com.beyonity.whatsappsharing.FeedFragment;
 
 public class feedback extends AppCompatActivity {
 
@@ -36,7 +38,7 @@ public class feedback extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new SuggFragment(), "SUGGESTION");
-        adapter.addFragment(new FeedFragment(), "FEEDBACK");
+        adapter.addFragment(new FeedFragment(), "PROBLEMS");
         viewPager.setAdapter(adapter);
     }
 
